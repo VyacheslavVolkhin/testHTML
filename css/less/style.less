@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* ----------------------------------- *\
+			icons
+\* ----------------------------------- */
+.i {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+@import 'mixin.less';
+@import 'main.less';
+@import 'common.less';
+@import 'structura.less';
+@import 'fonts.less';
+@import 'forms.less';
+@import 'icons.less';
+/* ----------------------------------- *\
+			items styles
+\* ----------------------------------- */
+
+/* ----------------------------------- *\
+			content styles
+\* ----------------------------------- */
+.header {
+	position: relative;
+	height: 40px;
+	z-index: 99;
+}
+.main-menu-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+}
+.btn-menu {
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #f00;
+	&.menu-second {
+		left: 100px;
+		&~.menu-block {
+			left: 100px;
+		}
+	}
+	&.menu-third {
+		left: 300px;
+		&~.menu-block {
+			left: 300px;
+		}
+	}
+}
+.menu-block {
+	display: none;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	padding: 40px;
+	border: 1px solid #f00;
+}

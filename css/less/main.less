@@ -1,0 +1,48 @@
+@clr-base: #000000;
+@clr-att: #ff0000;
+
+@min: 320px;
+@max: 1200px;
+
+/* ----------------------------------- *\
+			main styles
+\* ----------------------------------- */
+body {
+	color: @clr-base;
+	background: #fff;
+}
+p, ul, ol {
+	position: relative;
+	img {
+		max-width: 100%;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+li {
+	position: relative;
+}
+a {
+	text-decoration: none;
+	color: @clr-att;
+	&:hover {
+		text-decoration: none;
+		color: @clr-att + #222;
+	}
+}
+a.link-main, .link-main {
+	text-decoration: none;
+	border-bottom: 1px solid;
+	&:hover {
+		border-bottom: none;
+	}
+}
+h1, .h1-title,
+h2, .h2-title,
+h3, .h3-title,
+h4, .h4-title,
+h5, .h5-title,
+h6, .h6-title {
+
+}
